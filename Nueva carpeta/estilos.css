@@ -1,0 +1,66 @@
+ <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: #f7fbff;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+		color:#1aa3ff;
+    }
+
+    .dia {
+        background: #ffffff;
+        padding: 20px;
+        margin-bottom: 50px;
+        border-radius: 12px;
+    }
+    h2 {
+        margin-top: 0;
+        color: #1aa3ff;
+    }
+    .texto-dia {
+        margin: 10px 0 20px 0;
+        padding-left: 10px;
+    }
+    iframe {
+        width: 100%;
+        max-width: 500px;
+        height: 280px;
+        border: none;
+        border-radius: 10px;
+        background: #000;
+    }
+	html {
+    	scroll-behavior: smooth;
+	}
+
+   
+    body.dark {
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+    body.dark .dia {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+    body.dark header {
+        background: #1e293b !important;
+    }
+    body.dark h1, 
+    body.dark h2 {
+        color: #60a5fa !important;
+    }
+    body.dark button {
+        background: #3b82f6 !important;
+        color: white !important;
+    }
+    body.dark iframe {
+        background: #000;
+    }
+
+    </style>
+	<body><button class="boton" onclick="toggleDarkMode()">🌙 Cambiar modo</button></body>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videos explicativos sobre la lengua de señas</title>
+  <link rel="icon" type="image/png" href="flag.png">
+  <meta name="description" content="Página con videos explicativos y accesos a temas del lenguaje de señas." />
+
+  <style>
+    :root{
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --accent:#0b79d0;
+      --text:#103040;
+      --muted:#556879;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef6fb);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:28px;
+    }
+
+    header{
+      width:100%;
+      max-width:1000px;
+      margin-bottom:18px;
+    }
+
+    h1{font-size:1.6rem;margin:0 0 6px;}
+    p.lead{margin:0;color:var(--muted);}
+
+    main{
+      width:100%;
+      max-width:1000px;
+      background:transparent;
+    }
+
+    /* Hero */
+    .hero{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      padding:18px;
+      background:linear-gradient(90deg,rgba(11,121,208,0.06),rgba(11,121,208,0.02));
+      border-radius:var(--radius);
+      backdrop-filter:blur(4px);
+    }
+
+    .hero .thumb{
+      flex:0 0 110px;
+      height:70px;
+      border-radius:8px;
+      background:linear-gradient(135deg,var(--accent),#4fb3e8);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+    }
+
+    /* Grid */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-top:20px;
+    }
+
+    a.card{
+      display:block;
+      text-decoration:none;
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(16,48,64,0.06);
+      transition:transform .18s ease, box-shadow .18s ease;
+      color:var(--text);
+    }
+
+    a.card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 14px 30px rgba(16,48,64,0.09);
+    }
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:1.05rem;
+      transition:color .2s ease;
+    }
+
+    a.card:hover h3{
+      color:var(--accent);
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.92rem;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(11,121,208,0.1);
+      color:var(--accent);
+      font-weight:600;
+      font-size:0.78rem;
+      margin-bottom:6px;
+    }
+
+    footer{
+      margin-top:30px;
+      color:var(--muted);
+      font-size:0.9rem;
+      text-align:center;
+      padding-bottom:50px;
+    }
+
+    /* Botón volver atrás */
+    #volver {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      padding:10px 20px;
+      background:var(--accent);
+      color:white;
+      border:none;
+      border-radius:10px;
+      cursor:pointer;
+      font-size:14px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.15);
+    }
+	/* Modo Oscuro */
+	body.dark-mode {
+		background: #0d1117;
+		color: #e6e6e6;
+	}
+
+	body.dark-mode h1, 
+	body.dark-mode h2 {
+		color: #66c0ff;
+	}
+
+	body.dark-mode .dia {
+		background: #1a1f24;
+	}
+
+	body.dark-mode button {
+		background: #66c0ff;
+		color: #000;
+	}
+
+   
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero" role="banner">
+      <div class="thumb" aria-hidden="true">VÍDEOS</div>
+      <div>
+        <h1>VIDEOS EXPLICATIVOS SOBRE LA LENGUA DE SEÑAS</h1>
+		<button onclick="toggleDarkMode()" 
+style="position: fixed; top: 20px; right: 20px; padding: 10px 15px; 
+background:#1aa3ff; color:white; border:none; border-radius:8px; cursor:pointer;">
+    Modo Claro / Oscuro
+</button>
+
+        <p class="lead">Elige un tema para ver videos y recursos. Cada cartel abre una página específica.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="temas">
+      <h2 id="temas" style="font-size:1rem;margin:14px 0 6px;color:var(--muted)">TEMAS</h2>
+
+      <div class="grid">
+
+        <a class="card" href="dias-de-la-semana.html" aria-label="Ir a Días de la semana">
+          <div class="badge">1</div>
+          <h3>📅 DÍAS DE LA SEMANA</h3>
+          <p>Videos y fichas sobre los nombres y señas de cada día.</p>
+        </a>
+
+        <a class="card" href="abecedario.html" aria-label="Ir a Abecedario">
+          <div class="badge">2</div>
+          <h3>🔤 ABECEDARIO</h3>
+          <p>Explicaciones del alfabeto y cómo formar palabras en señas.</p>
+        </a>
+
+        <a class="card" href="colores.html" aria-label="Ir a Colores">
+          <div class="badge">3</div>
+          <h3>🎨 COLORES</h3>
+          <p>Señas para los colores básicos.</p>
+        </a>
+
+        <a class="card" href="espacios-de-la-escuela.html" aria-label="Ir a Espacios de la escuela">
+          <div class="badge">4</div>
+          <h3>🏫 ESPACIOS DE LA ESCUELA</h3>
+          <p>Vocabulario sobre aulas, pasillos y espacios comunes.</p>
+        </a>
+
+        <a class="card" href="elementos-del-taller-textil.html" aria-label="Ir a Elementos del taller textil">
+          <div class="badge">5</div>
+          <h3>🧵 ELEMENTOS DEL TALLER TEXTIL</h3>
+          <p>Materiales y herramientas del taller textil.</p>
+        </a>
+
+        <a class="card" href="emociones.html" aria-label="Ir a Emociones">
+          <div class="badge">6</div>
+          <h3>😊 EMOCIONES</h3>
+          <p>Cómo expresar emociones en señas.</p>
+        </a>
+
+        <a class="card" href="personas-escuela-familia.html" aria-label="Ir a Personas (escuela y familia)">
+          <div class="badge">7</div>
+          <h3>👨‍👩‍👧 PERSONAS</h3>
+          <p>Vocabulario sobre familia y escuela.</p>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Recursos de lengua de señas | Desarrollado por Estudiantes del I.F.D 6
+  </footer>
+
+ 
+  <button id="volver" onclick="history.back()">⬅ Volver atrás</button>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+}
+
+// Mantener el modo al recargar
+window.onload = () => {
+    if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark-mode");
+    }
+};
+</script>
+
+</body>
+</html>

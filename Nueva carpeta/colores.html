@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="flag.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORES</title>
+   <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: #f7fbff;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+		color:#1aa3ff;
+    }
+
+    .dia {
+        background: #ffffff;
+        padding: 20px;
+        margin-bottom: 50px;
+        border-radius: 12px;
+    }
+    h2 {
+        margin-top: 0;
+        color: #1aa3ff;
+    }
+    .texto-dia {
+        margin: 10px 0 20px 0;
+        padding-left: 10px;
+    }
+    iframe {
+        width: 100%;
+        max-width: 500px;
+        height: 280px;
+        border: none;
+        border-radius: 10px;
+        background: #000;
+    }
+	html {
+    	scroll-behavior: smooth;
+	}
+
+   
+    body.dark-mode {
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+    body.dark-mode .dia {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+    body.dark-mode header {
+        background: #1e293b !important;
+    }
+    body.dark-mode h1, 
+    body.dark-mode h2 {
+        color: #60a5fa !important;
+    }
+    body.dark-mode button {
+        background: #3b82f6 !important;
+        color: white !important;
+    }
+    body.dark-mode iframe {
+        background: #000;
+    }
+
+
+    </style>
+</head>
+<body>
+<header style="background:#e8f5ff; padding:15px; text-align:center; border-radius:10px; margin-bottom:25px;">
+    <h1 style="margin:0; color:#1aa3ff;">COLORES</h1>
+			<button onclick="toggleDarkMode()" 
+style="position: fixed; top: 40px; right: 40px; padding: 10px 15px; 
+background:#1aa3ff; color:white; border:none; border-radius:8px; cursor:pointer;">
+    Modo Claro / Oscuro
+</button>
+</header>
+
+
+<div class="dia">
+    <h2>LUNES</h2>
+    <p class="texto-dia">Levantás la mano dominante y extendés solo el dedo índice, los demás dedos quedan cerrados. Movés la mano hacia un costado, como si dibujaras una línea horizontal en el aire.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>MARTES</h2>
+    <p class="texto-dia">Levantá la mano dominante y extendé el dedo medio, dejando los demás dedos cerrados. La palma mira hacia adelante. Mové la mano hacia un costado con firmeza, representando el segundo día.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>MIÉRCOLES</h2>
+    <p class="texto-dia">Formá la seña con el dedo anular extendido, los otros dedos cerrados. La palma está orientada hacia el frente. Mové la mano hacia el costado, marcando el centro de la semana.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>JUEVES</h2>
+    <p class="texto-dia">Extendé el dedo meñique, manteniendo los demás dedos cerrados. La palma mira hacia adelante. Mové la mano hacia el costado, señalando el cuarto día.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>VIERNES</h2>
+    <p class="texto-dia">Levantá el pulgar, con los otros dedos cerrados. La palma puede mirar hacia el frente. Mové la mano hacia el costado, indicando el cierre de la semana laboral.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>SÁBADO</h2>
+    <p class="texto-dia">Cerrá la mano en forma de puño, sin dedos extendidos. La palma puede mirar hacia vos o hacia adelante. Mové la mano hacia adelante, como si empujaras suavemente, marcando el inicio del fin de semana.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+
+<div class="dia">
+    <h2>DOMINGO</h2>
+    <p class="texto-dia">Extendé el dedo índice y el medio juntos, formando una “V”, con los demás dedos cerrados. La palma mira hacia el frente. Mové la mano hacia adelante, con claridad, para señalar el último día de la semana.</p>
+    <iframe src="" allowfullscreen></iframe>
+</div>
+<div style="text-align:center; margin-top:40px;">
+    <button onclick="history.back()" 
+            style="padding:12px 25px; font-size:18px; background:#1aa3ff; color:white; border:none; border-radius:8px; cursor:pointer;">
+        ⬅ Volver a la página anterior
+    </button>
+</div>
+<script src="modo.js"></script>
+</body>
+</html>
